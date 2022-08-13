@@ -1,4 +1,4 @@
-\*\*PRE_REQUISITOS
+# PRE_REQUISITOS
 
 - Extensión Live Server
 - Prettier
