@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+    1. el lenguaje lo dejo en ingles o español?
+    2. las imagenes de fondo en una seccion, es mejor ponerlas como fondo css de una etiqueta o como imagen en html?
+    3.siembre se pone la misma tabulacion? en la linea 17 por ejemplo con el ul no sale solo
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pagina pruebas</title>
+</head>
+<body>
+   <nav class="nav">
+    <ul class="nav__list">
+        <a class="link" href="otra.html"><img src="media/images/logo_mapache.jpg"></a>
+        <a class="link" href="otra.html">inicio</a>
+        <a class="link" href="otra.html">Nosotros</a>
+        <a class="link" href="otra.html">Comprar</a>
+        <a class="link" href="otra.html">Blog</a>
+        <a class="link" href="otra.html">Contacto</a>
+    </ul>
+   </nav> 
+   <header class="hero">
+    <p><h1>HTML y CSS</h1></p>
+    <p>Esta es una página de prueba para aprender HTML  y CSS</p>
+    <p>aqui quiero un boton y de fondo de header una imagen</p>
+   </header>
+   <main class="main">
+    <section class="main__section">
+        <h1>Sección artículos</h1>
+        <article class="main__article"><!--¿Seria mejor main__section__article?-->
+            <img src="./media/images/perezoso.jpg" alt="imagen perezoso"/>
+            <h1>Titulo del articulo</h1>
+            <p>Texto que describe brevemente el contenido del articulo que se encontrara al clicar el enlace</p>
+        </article>
+        <article class="main__article">
+            <img src="./media/images/buho.jpg" alt="imagen buho"/>
+            <h1>Titulo del articulo</h1>
+            <p>Texto que describe brevemente el contenido del articulo que se encontrara al clicar el enlace</p>
+        </article>
+        <article class="main__article">
+            <img src="./media/images/ardilla.jpg" alt="imagen ardilla"/>
+            <h1>Titulo del articulo</h1>
+            <p>Texto que describe brevemente el contenido del articulo que se encontrara al clicar el enlace</p>
+        </article>
+        <article class="main__article">
+            <img src="./media/images/pato.jpg" alt="imagen pato"/>
+            <h1>Titulo del articulo</h1>
+            <p>Texto que describe brevemente el contenido del articulo que se encontrara al clicar el enlace</p>
+        </article>
+        </section>
+    <aside class="aside"><!--¿Mejor main__aside?-->
+        <p>Aqui no se exactamente que va. Puede que articulos relacionados</p>
+    </aside>
+   </main>
+   <footer class="footer">
+        <section class="footer__section">
+            <p>Información de contacto</p>
+            <p>direccion calle ciudad</p>
+            <p>666 666 555</p>
+            <p>correo@correo.com</p>
+        </section>
+        <section>
+            <ul class="footer__link">
+                <a href="otra.html">Volver inicio</a>
+                <a href="otra.html">Nosotros</a>
+                <a href="otra.html">Comprar</a>
+                <a href="otra.html">Blog</a>
+                <a href="otra.html">Contactar</a>
+            </ul>
+        </section>
+   </footer>
+</body>
+</html>
