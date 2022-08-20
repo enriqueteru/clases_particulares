@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1[title] {
+    color: blue
+}
+
+.div {
+    color: green;
+}
+
+div~p {
+    color: red
+}
+
+div p {
+    color: orange
+}
+
+div+p {
+    color: red
+}
+
+p:first-of-type {
+    color: purple
+}
+
+ul :first-child {
+    color: firebrick
+}
+
+ul li::before {
+    content: '-';
+}
+
+h3::first-letter {
+    color: gray
+}
+
+.btn {
+    padding: 10px 50px;
+    transition: 350ms;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: red;
+    padding: 15px 50px;
+    transition: 350ms;
+}
+
+.btn::after {
+    content: '!!';
+}
+
+.btn::before {
+    content: '- ';
+}
+
+a:visited {
+    color: green
+}
