@@ -1,66 +1,80 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+/* CSS3 substring selectors  */
+a[title^='image'] { color: yellow } /* beginning substring selector */
+a[title*='large'] { color: white } /* arbitrary substring selector */
+a[title$='bathroom'] { color: blue } /* ending substring selector */
+a[href^='http://'][href*='/furniture/'][href$='.pdf'] { color: red } /* multiple attribute selectors */
 
-h1[title] {
-    color: blue
-}
+/* CSS3 sibling combinator selector */
+h2 + p { color: yellow } /* Adjacent Sibling (one adjacent element) */
+h2 ~ p { color: blue } /* General Sibling (all adjacent elements) */
 
-.div {
-    color: green;
-}
+/* CSS3 pseudo-classes and pseudo-elements selectors */
+div:first-child {} /* First child selector */
 
-div~p {
-    color: red
-}
+div:nth(4){} /* Every fourth element */
+div:nth(2n){} /* Every second element */
+div:nth(3n){ } /* Every third element */
 
-div p {
-    color: orange
-}
+div:nth-child(odd)  {} /* Every odd element */
+div:nth-child(even) {} /* Every even element */
 
-div+p {
-    color: red
-}
+div:nth(n+1) {} /* Every element except for the first instance */
+div:nth(2n+1) {} /* ...(1, 3, 5, etc.) */
+div:nth(3n-1) {} /* ...(2, 5, 8, etc.) */
 
-p:first-of-type {
-    color: purple
-}
+p:nth-child(2n) {} /* Every second child */
+p:nth-of-type(2n) {} /* Every second child only of type 'p' */
 
-ul :first-child {
-    color: firebrick
-}
+p:nth-last-child(-n+2) {} /* Every second child (reverse order) */
+p:nth-last-of-type(2n) {} /* Every second child only of type 'p' (reverse order) */
 
-ul li::before {
-    content: '-';
-}
+first-child {} /* Only first child */
+last-child {} /* Only last child */
 
-h3::first-letter {
-    color: gray
-}
+:first-of-type {} /* Every first child of specific type */
+:last-of-type {} /* Every last child of specific type */
 
-.btn {
-    padding: 10px 50px;
-    transition: 350ms;
-    border: none;
-}
+p:only-of-type {} /* Every element of specified type */
+p:only-child {} /* Only child without siblings */
 
-.btn:hover {
-    cursor: pointer;
-    background-color: red;
-    padding: 15px 50px;
-    transition: 350ms;
-}
 
-.btn::after {
-    content: '!!';
-}
+/* CSS3 miscellaneous pseudo-classes selectors (WebKit, Firefox, Opera) */
+#SomeID:target {} /* Targeted element of the URL */
+div:empty { background-color: red } /* Empty element (no children nodes even text nodes) */
+html:root { background-color: black } /* Root element */
+:not(p) {} /* All elements besides 'p' */
 
-.btn::before {
-    content: '- ';
-}
 
-a:visited {
-    color: green
+/* CSS3 UI element states pseudo-classes selectors (WebKit, Firefox, Opera) */
+:checked {}
+:disabled {}
+:enabled {}
+
+/* CSS3 pseudo-elements selectors (WebKit, Firefox, Opera) */
+::first-line { color: yellow;}
+::first-letter { color: yellow }
+::after { color: yellow }
+::before { color: yellow }
+
+::selection { color: yellow }
+
+/* CSS3 border and box effects (WebKit, Firefox, Opera) */
+
+div#LeftContIn {border-radius: 20px 10px;} /* border radius for every corner */
+
+
+
+/* Elements Class */
+
+.empty{
+    width: 50px;
+    height: 50px;
+    margin-left: 50px
 }
+.empty::before {content: 'before';
+     color: yellow;
+     margin-left:-40px;}
+
+.empty::after {content: 'after';
+     color: green; 
+     margin-left: 50px}
