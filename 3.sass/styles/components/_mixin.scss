@@ -1,0 +1,18 @@
+@mixin pepe($pepe: DarkGray, $padding: 50px) {
+    background-color: $pepe ;
+    padding: $padding;
+    color: white
+  }
+  
+  .info {
+    @include pepe;
+  }
+
+  .alert {
+    @include pepe($pepe: DarkRed);
+  }
+
+  .success {
+    @include pepe($pepe: green);
+  }
+  
