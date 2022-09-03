@@ -1,0 +1,33 @@
+@mixin small {
+    @media only screen and (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media only screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media only screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+.responsive {
+    
+    font-size: 24px;
+    color: green;
+
+    @include medium {
+        color: yellow;
+        font-size: 36px;
+    }
+
+    @include large {
+        color: red;
+        font-size: 42px;
+    }
+}

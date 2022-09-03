@@ -1,4 +1,1 @@
-# PRE_REQUISITOS
-
-- Live Server
-- Prettier
+# Ejercicios Clases

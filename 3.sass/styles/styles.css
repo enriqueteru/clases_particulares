@@ -1,0 +1,85 @@
+.info {
+  background-color: DarkGray;
+  padding: 50px;
+  color: white;
+}
+
+.alert {
+  background-color: DarkRed;
+  padding: 50px;
+  color: white;
+}
+
+.success {
+  background-color: green;
+  padding: 50px;
+  color: white;
+}
+
+.responsive {
+  font-size: 24px;
+  color: green;
+}
+@media only screen and (min-width: 1024px) {
+  .responsive {
+    color: yellow;
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .responsive {
+    color: red;
+    font-size: 42px;
+  }
+}
+
+.variables {
+  font-family: Helvetica, sans-serif;
+  color: rgb(225, 0, 255);
+  font-size: 60px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hola {
+  background-image: url("../assets/coding.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  padding: 50px 25px;
+}
+.hola__mundo {
+  color: whitesmoke;
+  background-color: black;
+  padding: 5px 50px;
+  font-size: 80px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav__element {
+  display: inline-block;
+}
+.nav__link {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: black;
+}
+.nav__link:hover {
+  color: black;
+  cursor: pointer;
+}
+.nav__link:visited {
+  color: grey;
+}/*# sourceMappingURL=styles.css.map */
