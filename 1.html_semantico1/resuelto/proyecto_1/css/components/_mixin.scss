@@ -1,0 +1,6 @@
+@mixin theme($cbg: rgb(158, 243, 172), $ctext:#27272d) {
+    background-color: $cbg;
+    color: $ctext;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
