@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(211, 211, 211);
+  font-size: 1rem;
+  font-family: "Lato";
+}
+
+h1 {
+  padding: 0 10px;
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  font-weight: 200;
+  margin-bottom: 2em;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1em;
+  color: rgb(4, 4, 4);
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+a:hover {
+  color: black;
+}
+
+.container {
+  max-width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+form>div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form>div>p {
+  min-width: 33.33%;
+  padding: 10px;
+}
+
+form p {
+  color: black;
+}
+
+form>div {
+  margin-bottom: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+keygen::-webkit-keygen-select,
+select[_moz-type=-mozilla-keygen],
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  margin-top: 0.5em;
+}
+
+label {
+  display: block;
+  margin: 0.75em 0;
+  font-weight: 2old;
+}
+
+input[type=radio]+label,
+input[type=checkbox]+label {
+  margin: 0;
+  font-weight: 200;
+  color: black;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input[type=button],input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  background-color: red;
+}
+
+button[disabled] {
+  cursor: default;
+}
+
+input {
+  line-height: normal;
+}
+
+input[disabled] {
+  cursor: default;
+}
+
+textarea {
+  line-height: 1.25em;
+}
+
+select {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+  display: block;
+  margin-right: 0.25em;
+  margin-top: 2px;
+  float: left;
+  clear: both;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=date],
+input[type=month],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=week],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=color] {
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 2px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0.5em 0.6em;
+  margin-bottom: 0.5em;
+}
+
+/*# sourceMappingURL=style.css.map */
