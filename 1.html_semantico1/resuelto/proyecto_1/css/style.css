@@ -1,173 +1,150 @@
-*{
-    margin:0%;
-    padding: 0%;
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
 }
-.nav{
-    width: 100%;
-    height: 80px;
-    background-color: aliceblue;
-}
-.nav__list{
-    padding-top:10px;/*He tenido que ajustarlo con padding porque no se alinea en el centro*/
-    display: flex;/*Que modifico para que el menu quede exactamente repartido como quiero*/
-    justify-content:space-around;
-    align-items: center;
-}
-.nav__list img{
-    width: 100px;
-    /*probar aqui flex-grow:5 o un flex-basic:50%*/
-}
-/*.nav__list img:hover{
-   border-style: solid;
 
-}con esto se mueven los demas botones del menu*/
-.link{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-    color: black
+.nav {
+  width: 100%;
+  height: 80px;
+  background-color: aliceblue;
 }
-.link:hover{
-    cursor: pointer;
-    color:rgb(44, 194, 97);
+.nav__list {
+  padding-top: 10px; /*He tenido que ajustarlo con padding porque no se alinea en el centro*/
+  display: flex; /*Que modifico para que el menu quede exactamente repartido como quiero*/
+  justify-content: space-around;
+  align-items: center;
 }
-.hero{
-    width: 100%;
-    height: 700px;
-    background-image: url("../media/images/paloma.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*opacity: 0.6;------¿se puede transparentar solo la imagen?¿es mejor modificarla en un editor?*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.nav__list img {
+  width: 100px;
+  /*probar aqui flex-grow:5 o un flex-basic:50%*/
 }
-.main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:rgb(208, 223, 240);
+
+.link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  cursor: pointer;
+  color: rgb(44, 194, 97);
+}
+
+.hero {
+  width: 100%;
+  height: 700px;
+  background-image: url("../media/images/paloma.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*opacity: 0.6;------¿se puede transparentar solo la imagen?¿es mejor modificarla en un editor?*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hero h1 {
+  margin-bottom: 25px;
+}
+.hero button.btn {
+  width: 220px;
+  height: 30px;
+  margin-top: 50px;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 15px;
+  background-color: #3e8f8f;
+  font-size: 20px;
+}
+.hero button.btn a {
+  text-decoration: none;
+  color: rgb(238, 244, 240);
+  font-weight: 200px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(208, 223, 240);
 }
 .main__section {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 5;/*que es esto?*/ 
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 5; /*que es esto?*/
 }
-.main__section > h1{
-    order:1;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 50px 0px;
+.main__section > h1 { /*funciona con y sin &*/
+  order: 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 50px 0px;
+  color: #141412;
 }
-.main__article{
-    width: 400px;
-    margin-top: 25px;
-    padding-bottom: 30px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:rgb(237, 241, 246);
+.main__article {
+  width: 900px;
+  height: 300px;
+  margin-top: 25px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(237, 241, 246);
+}
+.main__article h1 {
+  color: #141412;
+}
+.main__article p {
+  color: #3e8f8f;
+}
+.main__article img {
+  width: 400px;
+  height: 250px;
+}
+.main__article div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /*no modifica nada*/
+  padding: 0px 30px;
+}
+.main__article div:last-child > p {
+  margin-top: 20px;
+  text-align: justify;
+}
 
-    
-}
-.main__article img{
-    width: 400px;
-    margin-bottom: 30px;;
-}
 .aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    background-color: rgb(158, 243, 172);
-    height: 110vw;
-    flex-grow: 0,5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 110vw;
+  flex-grow: 0, 5;
+  background-color: rgb(158, 243, 172);
+  color: #27272d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(169, 146, 146);
-    height: 130px;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(169, 146, 146);
+  height: 130px;
+  width: 100%;
 }
-.footer__link a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-decoration: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-    color:aliceblue;
+.footer__link a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  color: aliceblue;
 }
-.footer__link a:hover{
-    cursor: pointer;
-    color:rgb(22, 28, 24);
-}
-
-/**{
-    width: 100%;
-    height: 100%;
-    padding: 0%;
-    margin:0% ;
-}
-.body{
-    padding:0px;
-    margin: 0px;
-}
-.nav{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin:0px;
-    padding:0px;
-    width: 100%;
-    height: 80px;
-    background-color: aliceblue;
-}
-.nav_list{
-    display: inline-flex;
-   
-    gap:30px;
-}
-.nav_list img{
-    width: 100px;
-}
-.nav_list img:hover{
-    width: 110px;   
-}
-.link{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-    color: black
-}
-.link:hover{
-    cursor: pointer;
-    color:rgb(44, 194, 97);
-}
-.hero{
-    width: 100%;
-    height: 700px;
-    background-image: url("./media/images/paloma.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*opacity: 0.6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 30vh;
-    width: 100vw;
-}*/
+.footer__link a:hover {
+  cursor: pointer;
+  color: rgb(22, 28, 24);
+}/*# sourceMappingURL=style.css.map */

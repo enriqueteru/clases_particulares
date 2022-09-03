@@ -1,0 +1,148 @@
+@import "./components/variables";
+@import "./components/mixin";
+*{
+    margin:0%;
+    padding: 0%;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    background-color: aliceblue;
+    &__list{
+        padding-top:10px;/*He tenido que ajustarlo con padding porque no se alinea en el centro*/
+        display: flex;/*Que modifico para que el menu quede exactamente repartido como quiero*/
+        justify-content:space-around;
+        align-items: center;
+        & img{
+            width: 100px;
+            /*probar aqui flex-grow:5 o un flex-basic:50%*/
+        }
+    }
+}
+
+.link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
+    &:hover{
+        cursor: pointer;
+        color:rgb(44, 194, 97);
+    }
+}
+
+.hero{
+    width: 100%;
+    height: 700px;
+    background-image: url("../media/images/paloma.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*opacity: 0.6;------¿se puede transparentar solo la imagen?¿es mejor modificarla en un editor?*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    & h1{
+        margin-bottom:25px;
+    }
+    & button.btn{
+        width: 220px;
+        height: 30px;
+        margin-top:50px;
+        cursor:pointer;
+        border-style: none;
+        border-radius: 15px;
+        background-color: $azul;
+        font-size: 20px;    
+        & a{
+            text-decoration:none;
+            color:rgb(238, 244, 240);
+            font-weight:200px;
+        }
+    }
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(208, 223, 240);
+    &__section {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 5;/*que es esto?*/ 
+        &> h1{/*funciona con y sin &*/
+            order:1;
+            font-family:$texto1;
+            margin: 50px 0px;
+            color:$negro;
+        }
+    }
+    &__article{
+        width: 900px;
+        height:300px;
+        margin-top: 25px;
+        padding:25px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        font-family:$texto1;
+        background-color:rgb(237, 241, 246);
+        & h1{
+            color:$negro;
+        }
+        & p{
+            color:$azul;
+        }
+        & img{
+            width: 400px;
+            height: 250px;
+        }
+        & div:last-child{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;/*no modifica nada*/
+            padding: 0px 30px ;
+            & > p{
+                margin-top:20px;
+                text-align: justify;
+            }
+        }    
+    }
+} 
+
+.aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 110vw;
+    flex-grow: 0,5;
+    @include theme;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(169, 146, 146);
+    height: 130px;
+    width: 100%;
+    &__link a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-decoration: none;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+        color:aliceblue;
+        &:hover{
+            cursor: pointer;
+            color:rgb(22, 28, 24);
+        }
+    }
+}
