@@ -19,6 +19,7 @@
         }
     }
 }
+
 .link{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
@@ -28,6 +29,7 @@
         color:rgb(44, 194, 97);
     }
 }
+
 .hero{
     width: 100%;
     height: 700px;
@@ -40,7 +42,26 @@
     justify-content: center;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    & h1{
+        margin-bottom:25px;
+    }
+    & button.btn{
+        width: 220px;
+        height: 30px;
+        margin-top:50px;
+        cursor:pointer;
+        border-style: none;
+        border-radius: 15px;
+        background-color: $azul;
+        font-size: 20px;    
+        & a{
+            text-decoration:none;
+            color:rgb(238, 244, 240);
+            font-weight:200px;
+        }
+    }
 }
+
 .main{
     display: flex;
     justify-content: space-between;
@@ -60,12 +81,12 @@
         }
     }
     &__article{
-        width: 400px;
+        width: 900px;
+        height:300px;
         margin-top: 25px;
-        padding-bottom: 30px;
+        padding:25px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content:space-around;
         align-items: center;
         font-family:$texto1;
         background-color:rgb(237, 241, 246);
@@ -77,8 +98,19 @@
         }
         & img{
             width: 400px;
-            margin-bottom: 30px;;
+            height: 250px;
         }
+        & div:last-child{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;/*no modifica nada*/
+            padding: 0px 30px ;
+            & > p{
+                margin-top:20px;
+                text-align: justify;
+            }
+        }    
     }
 } 
 
