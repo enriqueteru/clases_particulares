@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
-
 * {
   box-sizing: border-box;
 }
@@ -32,7 +31,6 @@ a {
   text-decoration: none;
   border-bottom: 1px dotted;
 }
-
 a:hover {
   color: black;
 }
@@ -44,31 +42,22 @@ a:hover {
   padding: 1.5em;
 }
 
-form>div {
+form > div {
   display: flex;
   flex-wrap: wrap;
 }
-
-form>div>p {
+form > div > p {
   min-width: 33.33%;
   padding: 10px;
 }
-
 form p {
   color: black;
 }
-
-form>div {
+form > div {
   margin-bottom: 1em;
 }
 
-button,
-input,
-optgroup,
-select,
-keygen::-webkit-keygen-select,
-select[_moz-type=-mozilla-keygen],
-textarea {
+button, input, optgroup, select, keygen::-webkit-keygen-select, select[_moz-type=-mozilla-keygen], textarea {
   color: inherit;
   font: inherit;
   margin: 0;
@@ -81,8 +70,7 @@ label {
   font-weight: 2old;
 }
 
-input[type=radio]+label,
-input[type=checkbox]+label {
+input[type=radio] + label, input[type=checkbox] + label {
   margin: 0;
   font-weight: 200;
   color: black;
@@ -93,10 +81,9 @@ button {
   cursor: pointer;
 }
 
-input[type=button],input[type=reset], input[type=submit] {
+input[type=button], input[type=reset], input[type=submit] {
   -webkit-appearance: button;
   cursor: pointer;
-  background-color: red;
 }
 
 button[disabled] {
@@ -106,7 +93,6 @@ button[disabled] {
 input {
   line-height: normal;
 }
-
 input[disabled] {
   cursor: default;
 }
@@ -120,8 +106,7 @@ select {
   background-color: #fff;
 }
 
-input[type=checkbox],
-input[type=radio] {
+input[type=checkbox], input[type=radio] {
   box-sizing: border-box;
   padding: 0;
   display: block;
@@ -130,31 +115,14 @@ input[type=radio] {
   float: left;
   clear: both;
 }
-
 input[type=search] {
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
-
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
-input[type=text],
-input[type=password],
-input[type=email],
-input[type=url],
-input[type=date],
-input[type=month],
-input[type=time],
-input[type=datetime],
-input[type=datetime-local],
-input[type=week],
-input[type=number],
-input[type=search],
-input[type=tel],
-input[type=color] {
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=date], input[type=month], input[type=time], input[type=datetime], input[type=datetime-local], input[type=week], input[type=number], input[type=search], input[type=tel], input[type=color] {
   border: 1px solid #ccc;
   box-shadow: inset 0 1px 3px #ddd;
   border-radius: 2px;
@@ -163,6 +131,4 @@ input[type=color] {
   max-width: 100%;
   padding: 0.5em 0.6em;
   margin-bottom: 0.5em;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

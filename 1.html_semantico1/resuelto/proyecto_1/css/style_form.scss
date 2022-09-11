@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(232, 231, 231);
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    padding: 20px 70px 10px;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+}
+p {
+    font-size: 1em;
+    color: rgb(4, 4, 4);
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+.container {
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+form {
+    padding: 40px 20px 20px 70px;
+    border-radius: 10px;
+    background-color: rgb(250, 246, 246);
+    
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+        > p {
+        min-width: 33.33%;
+        padding: 10px;
+        }
+    }
+    p {
+        color: black;
+    }
+    > div {
+        margin-bottom: 1em;
+    }
+}
+
+//Estilos Formularios 
+button, input, optgroup, select, keygen::-webkit-keygen-select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    margin-top: 0.5em;
+}
+label {
+    display: block;
+    margin: 0.75em 0;
+    font-weight: 2old;
+}
+input {
+    &[type=radio] {
+        box-sizing: border-box;
+        padding: 0;
+        display: block;
+        margin-right: 0.25em;
+        margin-top: 2px;
+        float: left;
+        clear: both;
+    } 
+    &[type="radio"] + label {
+        margin: 0;
+        font-weight: 200;
+        color: black;
+    }
+}
+
+button {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+input {
+    &[type=button], &[type=reset], &[type=submit] {
+        -webkit-appearance: button;
+        cursor: pointer;
+    }
+}
+
+button[disabled] {
+    cursor: default;
+}
+
+input {
+    &[disabled] {
+        cursor: default;
+    }
+
+    line-height: normal;
+}
+
+textarea {
+    line-height: 1.25em;
+}
+
+select {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+input {
+    &[type=radio] {
+        box-sizing: border-box;
+        padding: 0;
+        display: block;
+        margin-right: 0.25em;
+        margin-top: 2px;
+        float: left;
+        clear: both;
+    }
+    
+   
+    &[type=text], &[type=email], &[type=date], &[type=tel], &[type=color] {
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 3px #ddd;
+        border-radius: 2px;
+        vertical-align: middle;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        max-width: 100%;
+        padding: 0.5em 0.6em;
+        margin-bottom: 0.5em;
+    }
+}
+
+
+
+/*@import "./components/variables";
+@import "./components/mixin";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(211, 211, 211);
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    padding: 0 10px;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+p {
+    font-size: 1em;
+    color: rgb(4, 4, 4);
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+.container {
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+form {
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      > p {
+        width: 33.33%;
+        padding: 10px;
+      }
+    }  
+}
+button, input, optgroup, select, keygen::-webkit-keygen-select, select[_moz-type="-mozilla-keygen"], textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    margin-top: 0.5em;
+}
+label {
+    display: block;
+    margin: 0.75em 0;
+    font-weight: 2old;
+}
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input {
+  &[type=button], &[type=reset], &[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+  }
+}
+select {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}  
+input {
+    &[type=text], &[type=password], &[type=email], &[type=date], &[type=tel], &[type=color] {
+      border: 1px solid #ccc;
+      box-shadow: inset 0 1px 3px #ddd;
+      border-radius: 2px;
+      vertical-align: middle;
+      max-width: 100%;
+  }
+}
+/**{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgba(155, 181, 183, 0.23);
+}
+.container{
+    height: 100%;
+    padding: 50px;
+}
+form{
+    & > div{
+        display: flex;
+        flex-wrap: wrap;
+        
+        & > p{
+           width : 33%;
+           padding: 5px;
+        }
+    }
+    
+    
+
+}*/
