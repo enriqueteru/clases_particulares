@@ -1,0 +1,99 @@
+<!-- ****************** LEER ANTES DE EMPEZAR ****************** -->
+
+<!-- PRUEBA: Enrique Teruel Gutiérrez -->
+<!-- Debes completar este fichero con el HTML que consideres necesario dentro de contenedor WRAPPER -->
+<!-- Ten en cuenta que la calidad del código HTML generado es importante y debe ser lo más correcto posible -->
+<!-- El tiempo máximo de realizacion de la prueba es de 60 minutos. Entrega la prueba como esté en ese momento ya que la no finalización de la misma no es excluyente del proceso -->
+<!-- Está prohibido añadir cualquier tipo de framework o librería de apoyo a la maquetación (por ejemplo Bootstrap) -->
+<!-- No es necesario añadir librerías adicionales para realizar la prueba -->
+<!-- El simbolo + del contenido implica implementar un JS que pliegue y despliegue el contenedor dejando solo mostrados los titulos si está plegado -->
+<!-- El acceso a internet está permitido para la realización de la prueba -->
+<!-- La maquetación debe verse correctamente en el navegador Mozilla Firefox o en Chrome. Será la persona que realiza la prueba la que debe elegir el navegador. -->
+<!-- Estos son recursos extras, que podrías utilizar -->
+<!-- Fuente Roboto - https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap -->
+<!-- Iconos - https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css - class: far fa-newspaper -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prueba Maquetacion - VASS</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="shortcut icon" href="./img/vass.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"
+    />
+  </head>
+  <body>
+    <div class="WRAPPER">
+      <header class="header">
+        <div class="header__info">
+          <img class="header__img" src="./img/logotipo.png" alt="logo">
+          <h1 class="header__title">prueba de maquetación: miriam serrano</h1>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <a class="nav__link" href="#">Opción 1</a>
+            <a class="nav__link" href="#">Opción 2</a>
+            <a class="nav__link" href="#">Opción 3</a>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <main class="main">
+          <section class="blog">
+            <article class="blog__article">
+              <h1 class="blog__title">título 1</h1>
+              <p class="blog__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita quam quia corrupti velit delectus laudantium est voluptates perferendis? Numquam autem ullam nemo eaque rerum asperiores, ut ad beatae. Veniam, suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat beatae ullam delectus quisquam blanditiis nisi, eum animi totam quod quidem ut a alias fugit repellendus esse et explicabo nulla aperiam!</p>
+              <img class="blog__img" src="./img/imagenContenido.png" alt="">
+            </article>
+            <article class="blog__article--last">
+              <h1 class="blog__title">título 2</h1>
+              <p class="blog__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita quam quia corrupti velit delectus laudantium est voluptates perferendis? Numquam autem ullam nemo eaque rerum asperiores, ut ad beatae. Veniam, suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem itaque ullam vero et facere repellendus dolor ipsa perferendis animi ab ut, reprehenderit non odio necessitatibus officiis nesciunt aut ipsum nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore id nemo aliquid, esse modi accusantium earum.</p>
+            </article>
+            <img class="cruz" src="./img/plus.png" alt="">
+          </section>
+          <section class="form">
+            <h1 class="form__title">contacto</h1>
+            <form action="/action_page.php">
+            <div class="row">
+              <div class="label">
+                <label for="email">Correo:</label>
+              </div>
+              <div class="input">
+                <input type="email" id="email" name="email" placeholder="correo@dominio">
+              </div>
+            </div>
+            <div class="row">
+              <div class="label">
+                <label for="area">Mensaje:</label>
+              </div>
+              <div class="input">
+                <textarea id="area" name="area" style="height:200px"></textarea>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <input type="submit" value="enviar">
+            </div>
+            </form>
+          </section>
+        </main>
+        <aside class="aside">
+          <img class="aside__icono" src="./img/icono.jpg" alt="">
+          <p class="aside__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae harum et iusto, facilis adipisci molestias qui nemo quia sunt ducimus, deleniti, maiores eos dicta aperiam.</p>
+          <a class="a" href="#">leer más</a>
+        </aside>
+      </div>
+      <footer class="footer">
+        <a href="#">Enlace 1</a>
+        <a href="#">Enlace 2</a>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/****************** LEER ANTES DE EMPEZAR ******************/
+/* PRUEBA: Enrique Teruel Gutiérrez */
+/* Color Letra y Fondo Azul: #003064 */
+/* Color Letra Gris: #666 */
+/* Color Placeholder: #aaa */
+/* Color Borde Gris: #e2e2e2 */
+/* Color Fondo Body: #efefef */
+/* Ancho columna izquierda contenido: 710px */
+/* Ancho columna derecha contenido: 250px */
+/* Altura Cabecera: 100px */
+/* Altura Menu: 50px */
+/* Altura Footer: 50px */
+/* Separacion Menu - Contenido: 15px */
+/* Separacion Contenido - Footer: 15px */
+/* Padding Contenido: 15px */
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.WRAPPER {
+  background-color: #efefef;
+  height: 100%;
+  min-height: 100vh;
+  padding: 25px 50px;
+}
+
+.header__info {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #003064;
+  text-transform: uppercase;
+}
+
+.nav {
+  height: 50px;
+  background-color: #003064;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+.nav__link {
+  text-decoration: none;
+  color: white;
+}
+.nav__list {
+  display: inline-flex;
+  gap: 2em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.main {
+  flex: 3;
+}
+
+.aside {
+  flex: 1;
+  background-color: white;
+  padding: 25px;
+  max-height: 240px;
+  position: relative;
+}
+.aside__p {
+  text-align: justify;
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+.aside__icono {
+  width: 100px;
+  display: flex;
+  margin: 0 auto;
+}
+.aside .a {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.blog {
+  display: flex;
+  gap: 25px;
+  background-color: white;
+  position: relative;
+  color: #003064;
+  border: 2px solid #e2e2e2;
+}
+.blog__title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.blog__article, .blog__article--last {
+  flex: 1;
+  padding: 25px;
+  line-height: 1.5em;
+}
+.blog__img {
+  width: 100%;
+  margin-top: 20px;
+}
+.blog .cruz {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.form {
+  background-color: white;
+  margin-top: 30px;
+  color: #003064;
+  padding: 25px 65px 25px 25px;
+}
+.form__title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+}
+.form input[type=email], .form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e2e2e2;
+  resize: vertical;
+}
+.form input[type=email] {
+  width: 50%;
+  font-size: 1.1em;
+}
+.form label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.form input[type=submit] {
+  float: left;
+  width: 300px;
+  height: 40px;
+  background-color: #003064;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid #efefef;
+  border-style: outset;
+  bottom: 18px;
+  cursor: pointer;
+}
+.form .label {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+  font-size: 1.3em;
+}
+.form .input {
+  float: left;
+  width: 85%;
+  margin-top: 6px;
+}
+.form .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 950px) {
+  .form .label, .form .input, .form input[type=submit], .form input[type=email] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.footer {
+  background-color: white;
+  height: 65px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 20px;
+}
+.footer a {
+  color: #003064;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 950px) {
+  .aside, .blog__article--last {
+    display: none;
+  }
+  .header__title {
+    font-size: 1.6em;
+  }
+}/*# sourceMappingURL=styles.css.map */
