@@ -1,0 +1,61 @@
+@mixin tablet {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+.main {
+    padding: 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    @include tablet() {
+        &__list {
+            list-style: none;
+            display: inline-flex;
+            gap: 20px;
+        }
+    }
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 30px;
+
+    &__cols {
+        flex: 1;
+        padding: 20px;
+    }
+
+    @include tablet() {
+        flex-direction: row;
+
+        &__cols {
+            padding: 50px;
+        }
+    }
+
+    @include desktop() {
+        background-color: red;
+    }
+}

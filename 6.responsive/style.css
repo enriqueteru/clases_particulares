@@ -1,1 +1,46 @@
-/*# sourceMappingURL=style.css.map */
+.main {
+  padding: 100px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list {
+  display: none;
+}
+.nav img {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .nav__list {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 30px;
+}
+.section__cols {
+  flex: 1;
+  padding: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    flex-direction: row;
+  }
+  .section__cols {
+    padding: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section {
+    background-color: red;
+  }
+}/*# sourceMappingURL=style.css.map */
